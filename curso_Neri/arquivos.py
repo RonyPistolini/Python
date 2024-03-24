@@ -1,0 +1,16 @@
+arquivo=open("familia.txt","w")
+arquivo.write("lista de pessoas da familia do Neri: \n")
+arquivo.write("Neri\n")
+arquivo.write("Liziane\n")
+arquivo.write("Giulia\n")
+arquivo.write("Gustavo\n")
+arquivo.flush()
+arquivo.close()
+print(arquivo.closed)
+print(arquivo.name)
+print(arquivo.mode)
+
+arquivo=open("familia.txt","r")
+for linha in arquivo.readlines():
+    print(linha)
+arquivo.close()
